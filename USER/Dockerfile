@@ -1,8 +1,8 @@
 FROM almalinux:9
 #CMD ["ping", "google.com"]  #cmd can be overridden
 RUN dnf install git -y
-RUN useradd Sahith
+RUN useradd sahith
 
-USER Sahith
+USER sahith
 CMD [ "google.com" ]
 ENTRYPOINT [ "ping" ]
